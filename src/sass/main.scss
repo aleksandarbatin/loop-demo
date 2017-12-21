@@ -1,0 +1,54 @@
+/*------------------------------------------------------------------------------
+*    CSS Document (http://www.w3.org/Style/CSS/)
+*    For STYLEGUIDE, reffer to /config/_styleguide.scss
+-----------------------------------------------------------------------------*/
+
+//------ALL VARIABLES
+@import 'config/variables';
+
+//------MIXINS
+@import 'mixins/breakpoints';
+@import 'mixins/borderRadius';
+@import 'mixins/transition';
+@import 'mixins/transform';
+@import 'mixins/calc';
+@import 'mixins/placeholder';
+@import 'mixins/fontFace';
+@import 'mixins/gradient';
+@import 'mixins/vendor-prefixes';
+@import 'mixins/absolute-center';
+
+
+//------MAIN CONFIG
+@import 'config/reset';
+@import 'config/baseConfig';
+@import 'config/typography';
+@import 'config/helpers';
+
+//------LAYOUTS
+@import 'layouts/pageWrapper';
+
+//------COMMON
+@import 'common/media';
+@import 'common/popup-icons';
+
+ //------BLOCKS
+@import 'blocks/header';
+@import 'blocks/intro';
+@import 'blocks/footer';
+@import 'blocks/mediaWall';
+@import 'blocks/text';
+@import 'blocks/team';
+@import 'blocks/panel';
+
+
+// //------COMPONENTS
+
+@import 'components/termine';
+@import 'components/newsArticle';
+
+// //------SLIDER±S
+
+@import 'sliders/slick';
+@import 'sliders/newsSlider';
+

@@ -1,0 +1,27 @@
+//-------------------------
+//-----------POP UP ICONS
+//-------------------------
+
+.popup {
+	&__icons {
+		position: absolute;
+		top: 8rem;
+		right: -7rem;
+		li {
+			display: block;
+			padding: 2rem;
+			background-color: $c-black;
+		}
+		li.close {
+			background-color: $c-background; 
+			svg {
+				fill: $c-black;
+			}
+		}
+		svg {
+			width: 3rem;
+			height: 3rem;
+			fill: $c-white;
+		}
+	}
+}

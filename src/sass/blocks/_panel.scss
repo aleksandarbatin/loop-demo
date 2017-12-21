@@ -1,0 +1,87 @@
+//--------------------------------------
+//----------- PANEL *(CONTACT and BRAND)
+//-------------------------------------
+
+.panel {
+	@extend %clearfix;
+	article {
+		float: left;
+		width: 50%;
+		padding-bottom: 8rem;
+		@include breakpoint(tablet) {
+			width: 100%;
+		}
+	}
+	.contact {
+		padding: 11rem 13rem 7rem;
+		@include breakpoint(tablet) {
+			padding: 10% 15% 10%;
+		}
+		div {
+			width: 100%;
+		}
+		input {
+			width: 100%;
+			height: 4rem;
+			margin-bottom: 1rem;
+			padding-left: 1rem;
+			background-color: $c-contactField;
+			border: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			@include breakpoint(tablet) {
+				margin-bottom: 2rem;
+			}
+		}
+		textarea {
+			width: 100%;
+			height: 12rem;
+			margin-bottom: 2rem;
+			border: none;
+			background-color: $c-contactField;
+			text-align: left;
+			@include breakpoint(tablet) {
+				height: 26rem;
+			}
+		}
+		button {
+			padding: 1.4rem 2rem;
+			font-size: 1.5rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			
+			border: 0.2rem solid $c-black; 
+			background-color: transparent;
+		}
+		h2 {
+			margin-bottom: 1.8rem;
+			font-size: 3rem;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		h3 {
+			margin-bottom: 1.8rem;
+			font-size: 2rem;
+			font-weight: 600;
+			text-transform: uppercase;
+		} 
+	}
+	.brand {
+		background-color: $c-black;
+		&__box {
+			position: relative;
+			width: 50%;
+			height: 25rem;
+			float: left;
+			figure {
+				font-size: 3rem;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: $c-white;
+				@include absolute(center);
+				text-align: center;
+			}
+		}
+	} 
+}

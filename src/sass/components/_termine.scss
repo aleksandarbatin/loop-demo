@@ -1,0 +1,67 @@
+//-------------------------
+//----------- TERMINE TABLE
+//-------------------------
+
+.termine {
+	@include absolute(center-horizontal);
+	top: 0;
+	left: 50%;
+	width: 90%;
+	padding: 18rem 7.5rem 15rem;
+	background-color: $c-white;
+	text-transform: uppercase;
+	font-weight: 600;
+	z-index: -1;
+	@include breakpoint(tablet) {
+		left: 0;
+		padding: 12rem 4.5rem 10rem;
+		transform: none;
+	}
+	@include breakpoint(mobile) {
+		width: 85%;
+		padding: 8rem 3.5rem 8rem;
+	}
+	.header__logo {
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 8rem;
+	}
+	&__title {
+		width: 50%;
+		margin-bottom: 1.8rem;
+		font-size: 5rem;
+	}
+	h4 {
+		width: 50%;
+		font-size: 2rem;
+	}
+	&__table {
+		margin-top: 5.5rem;
+		border-top: 1px solid #bbb;
+		ul li {
+			display: block;
+			padding: 3.2rem 0;
+			color: $c-grey;
+			font-size: 1.6rem;
+			border-bottom: 1px solid #bbb;
+			span {
+				margin-right: 8rem;
+				@include breakpoint(tablet) {
+					margin-right: 3rem;
+				}
+			}
+		}
+	}
+	span.data {
+		svg {
+			position: relative;
+			top: -0.2rem;
+			width: 2.8rem;
+			height: 2.8rem;
+			margin-right: 2.4rem;
+			fill: $c-grey;
+			vertical-align: middle;
+		}
+	}
+}

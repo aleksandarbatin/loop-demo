@@ -1,0 +1,30 @@
+//-------------------------
+//----------- NEWS SLIDER
+//-------------------------
+
+.news__slider {
+	position: relative;
+	margin-top: 5rem;
+	margin-bottom: 6rem;
+	ul li {
+		img {
+			width: 100%;
+		}
+	}
+	.btn {
+		@include absolute(center-vertical);
+		width: 5rem;
+		height: 5rem;
+		background-color: rgba(0,0,0,0.6);
+		cursor: pointer;
+		svg {
+			@include absolute(center);
+			width: 2.5rem;
+			height: 2.5rem;
+			fill: $c-background;
+		}
+		&-next {
+			right: 0;
+		}
+ 	}
+}

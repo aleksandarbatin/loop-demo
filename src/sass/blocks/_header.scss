@@ -1,0 +1,70 @@
+//-------------------------
+//----------- HEADER
+//-------------------------
+
+.header {
+	position: relative;
+	height: 8rem;
+	background-color: $c-white;
+	&__nav {
+		float: left;
+		margin-left: 2.8rem;
+		@include breakpoint(tablet) {
+			display: none;
+			position: absolute;
+			top: 8rem;
+			left: 0;
+			width: 100%;
+			margin-left: 0;
+			z-index: 5555;
+			background-color: $c-black;
+		}
+		li {
+			padding: 3.3rem 2rem;
+			font-size: 1.6rem;
+			font-weight: 600;
+			letter-spacing: -0.6px;
+			text-transform: uppercase;
+			@include breakpoint(tablet--landscape) {
+				font-size: 2rem;
+			}
+			@include breakpoint(tablet) {
+				display: block;
+				color: $c-white;
+			}
+		}
+	}
+	&__logo {
+		position: relative;
+		float: right;
+		width: 32.2%;
+		height: 100%; 
+		background-color: $c-red;
+		z-index: 666;
+		@include breakpoint(mobile) {
+			width: 45%;
+		}
+		img {
+			@include absolute(center);
+			float: right;
+			width: 59%;
+			@include breakpoint(mobile) {
+				width: 80%;
+			}
+		}
+	}
+	&__menuBtn {
+		display: none;
+		@include breakpoint(tablet) {
+			display: block;
+			@include absolute(center-vertical);
+			left: 3rem;
+			cursor: pointer;
+			svg {
+				width: 4rem;
+				height: 4rem;
+				fill: $c-black;
+			}
+		}
+	}
+}

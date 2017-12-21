@@ -1,0 +1,73 @@
+//-------------------------
+//----------- TEXT
+//-------------------------
+
+.text {
+	width: 100%;
+	margin-bottom: 1rem;
+	padding-top: 11rem;
+	background-color: $c-white;
+	text-align: center;
+	@extend .wrapUp; 
+	.container {
+		width: 78%;
+		margin: 0 auto;
+		@include breakpoint(tablet--landscape) {
+			width: 85%;
+		}
+		@include breakpoint(mobile) {
+			width: 90%;
+		}
+	}
+	header {
+		margin-bottom: 5rem;
+	}
+	&__title {
+		margin-bottom: 1.5rem;
+		font-size: 5rem;
+		font-weight: 600;
+		letter-spacing: -0.1rem;
+		color: $c-black;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	h3 {
+		margin-bottom: 1.8rem;
+		font-size: 2rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	hr {
+		display: inline-block;
+		width: 40%;
+		height: 0.2rem;
+		background-color: $c-lightGrey;
+	}
+	&__column {
+		float: left;
+		width: 50%;
+		padding-left: 2rem;
+		@include breakpoint(tablet) {
+			width: 100%;
+		}
+	}
+	p {
+		margin-bottom: 2rem;
+		font-size: 1.5rem;
+		line-height: 1.5;
+		color: $c-grey;
+		text-align: left;
+		@include breakpoint(tablet--landscape) {
+			font-size: 12px;
+		}
+		@include breakpoint(tablet) {
+			font-size: 2rem;
+		}
+	}
+	.text__bottom {
+		position: relative;
+		width: 100%;
+		z-index: 5;
+	}
+}

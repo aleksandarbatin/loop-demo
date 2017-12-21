@@ -1,0 +1,76 @@
+//-------------------------
+//----------- FOOTER
+//-------------------------
+
+.footer {
+	position: relative;
+	padding: 2rem 0 5rem;
+	background-color: $c-background;
+	@include breakpoint(mobile) {
+		padding: 4rem 0 7rem;
+		text-align: center;
+	}
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+	    top: -8.5rem;
+	    width: 0;
+	    height: 0;
+	    border-left: 70rem solid transparent;
+	    border-right: 70rem solid transparent;
+	    border-bottom: 8.5rem solid #e5eaee;
+	    z-index: 0;
+	    @include breakpoint(tablet) {
+	    	top: -5.5rem;
+		    border-left: 49rem solid transparent;
+		    border-right: 48rem solid transparent;
+		    border-bottom: 5.5rem solid #e5eaee;
+	    }
+	    @include breakpoint(mobile) {
+	    	display: none;
+	    }
+	}
+	&__copyright {
+		float: left;
+		margin-left: 2rem;
+		@include breakpoint(mobile) {
+			@include absolute(center-horizontal);
+			bottom: 0;
+			width: 80%;
+			margin-bottom: 0.8rem;
+		}
+		span {
+			font-size: 1.3rem;
+			line-height: 1.5;
+			color: $c-grey;
+		}
+	}
+	&__social {
+		@include absolute(center-horizontal);
+		top: 0;
+		@include breakpoint(mobile) {
+			position: static;
+			display: inline-block;
+			margin-bottom: 2rem;
+			transform: none;
+		}
+		svg {
+			width: 4rem;
+			height: 4rem;
+		}
+	}
+	&__nav {
+		float: right;
+		margin-right: 2rem;
+		font-size: 1.3rem;
+		line-height: 1.5;
+		@include breakpoint(mobile) {
+			display: block;
+			float: none;
+		}
+		li {
+			margin-left: 2rem;
+		}
+	}
+}

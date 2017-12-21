@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SEGEL team</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="icon-calendar" viewBox="0 0 16 16"><title>calendar</title><path d="M13 0h-2v2h2V0zm2 0h-1v3h-4V0H6v3H2V0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm-1 14H2V5h12v9zM5 0H3v2h2V0zm4 7H7v2h2V7zm3 0h-2v2h2V7zm-6 3H4v2h2v-2zm0-3H4v2h2V7zm3 3H7v2h2v-2zm3 0h-2v2h2v-2z"/></symbol><symbol id="icon-cancel" viewBox="0 0 492 492"><path d="M300.188 246L484.14 62.04c5.06-5.064 7.852-11.82 7.86-19.024 0-7.208-2.792-13.972-7.86-19.028L468.02 7.872C462.952 2.796 456.196.016 448.984.016c-7.2 0-13.956 2.78-19.024 7.856L246.008 191.82 62.048 7.872C56.988 2.796 50.228.016 43.02.016c-7.2 0-13.96 2.78-19.02 7.856L7.872 23.988c-10.496 10.496-10.496 27.568 0 38.052L191.828 246 7.872 429.952C2.808 435.024.02 441.78.02 448.984c0 7.204 2.788 13.96 7.852 19.028l16.124 16.116c5.06 5.072 11.824 7.856 19.02 7.856 7.208 0 13.968-2.784 19.028-7.856l183.96-183.952 183.952 183.952c5.068 5.072 11.824 7.856 19.024 7.856h.008c7.204 0 13.96-2.784 19.028-7.856l16.12-16.116c5.06-5.064 7.852-11.824 7.852-19.028 0-7.204-2.792-13.96-7.852-19.028L300.188 246z"/></symbol><symbol id="icon-facebook" viewBox="0 0 16 16"><title>facebook</title><path d="M9.5 3H12V0H9.5C7.57 0 6 1.57 6 3.5V5H4v3h2v8h3V8h2.5l.5-3H9V3.5c0-.271.229-.5.5-.5z"/></symbol><symbol id="icon-gplus" viewBox="0 0 604.35 604.35"><path d="M516.375 255v-76.5h-51V255h-76.5v51h76.5v76.5h51V306h76.5v-51h-76.5zm-196.35 86.7l-28.051-20.4c-10.2-7.649-20.399-17.85-20.399-35.7s12.75-33.15 25.5-40.8c33.15-25.5 66.3-53.55 66.3-109.65 0-53.55-33.15-84.15-51-99.45h43.35l30.6-35.7h-158.1c-112.2 0-168.3 71.4-168.3 147.9 0 58.65 45.9 122.4 127.5 122.4h20.4c-2.55 7.65-10.2 20.4-10.2 33.15 0 25.5 10.2 35.7 22.95 51-35.7 2.55-102 10.2-150.45 40.8-45.9 28.05-58.65 66.3-58.65 94.35 0 58.65 53.55 114.75 168.3 114.75 137.7 0 204.001-76.5 204.001-150.449-.001-53.551-28.051-81.601-63.751-112.201zm-193.8-232.05c0-56.1 33.15-81.6 68.85-81.6 66.3 0 102 89.25 102 140.25 0 66.3-53.55 79.05-73.95 79.05-63.75 0-96.9-79.05-96.9-137.7zm91.799 459c-84.15 0-137.7-38.25-137.7-94.351 0-56.1 51-73.95 66.3-81.6 33.15-10.2 76.5-12.75 84.15-12.75h17.85c61.2 43.35 86.7 61.2 86.7 102 0 48.451-48.449 86.701-117.3 86.701z"/></symbol><symbol id="icon-menu" viewBox="0 0 73.168 73.168"><path d="M4.242 14.425h64.684c2.344 0 4.242-1.933 4.242-4.324 0-2.385-1.898-4.325-4.242-4.325H4.242C1.898 5.776 0 7.716 0 10.101c0 2.392 1.898 4.324 4.242 4.324zm64.684 17.834H4.242C1.898 32.259 0 34.2 0 36.584c0 2.393 1.898 4.325 4.242 4.325h64.684c2.344 0 4.242-1.933 4.242-4.325 0-2.384-1.898-4.325-4.242-4.325zm0 26.483H4.242C1.898 58.742 0 60.683 0 63.067c0 2.393 1.898 4.325 4.242 4.325h64.684c2.344 0 4.242-1.935 4.242-4.325 0-2.384-1.898-4.325-4.242-4.325z"/></symbol><symbol id="icon-news" viewBox="0 0 16 16"><title>newspaper</title><path d="M14 4V2H0v11a1 1 0 0 0 1 1h13.5a1.5 1.5 0 0 0 1.5-1.5V4h-2zm-1 9H1V3h12v10zM2 5h10v1H2zm6 2h4v1H8zm0 2h4v1H8zm0 2h3v1H8zM2 7h5v5H2z"/></symbol><symbol id="icon-next" viewBox="0 0 492.004 492.004"><path d="M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z"/></symbol><symbol id="icon-prev" viewBox="0 0 492 492"><path d="M198.608 246.104L382.664 62.04c5.068-5.056 7.856-11.816 7.856-19.024 0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12C361.476 2.792 354.712 0 347.504 0s-13.964 2.792-19.028 7.864L109.328 227.008c-5.084 5.08-7.868 11.868-7.848 19.084-.02 7.248 2.76 14.028 7.848 19.112l218.944 218.932c5.064 5.072 11.82 7.864 19.032 7.864 7.208 0 13.964-2.792 19.032-7.864l16.124-16.12c10.492-10.492 10.492-27.572 0-38.06L198.608 246.104z"/></symbol><symbol id="icon-twitter" viewBox="0 0 16 16"><title>twitter</title><path d="M16 3.538a6.461 6.461 0 0 1-1.884.516 3.301 3.301 0 0 0 1.444-1.816 6.607 6.607 0 0 1-2.084.797 3.28 3.28 0 0 0-2.397-1.034 3.28 3.28 0 0 0-3.197 4.028 9.321 9.321 0 0 1-6.766-3.431 3.284 3.284 0 0 0 1.015 4.381A3.301 3.301 0 0 1 .643 6.57v.041A3.283 3.283 0 0 0 3.277 9.83a3.291 3.291 0 0 1-1.485.057 3.293 3.293 0 0 0 3.066 2.281 6.586 6.586 0 0 1-4.862 1.359 9.286 9.286 0 0 0 5.034 1.475c6.037 0 9.341-5.003 9.341-9.341 0-.144-.003-.284-.009-.425a6.59 6.59 0 0 0 1.637-1.697z"/></symbol></svg>
+	<div class="pageWrapper">
+		<header class="header" id="header">
+			<span class="header__menuBtn">
+				<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu"></use></svg>
+			</span>
+			<ul class="header__nav">
+				<li>About Us</li>
+				<li>Gallery</li>
+				<li>Crew</li>
+				<li>Kontakt</li>
+			</ul>
+			<div class="header__logo">
+				<img src="images/SegelTeam-Logo.png" alt="segelTeam-logo-">
+			</div>
+		</header>
+		<main class="mainContainer">
+			<section class="intro">
+				<img class="intro__mainView" src="images/main-view.png" alt="intro-img">
+				<img class="intro__decoration" src="images/compass.png" alt="compass">
+				<article>
+					<h1 class="intro__title">Lorem ipsum proin gravi</h1>
+					<h3 class="intro__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit magna aliqua</h3>
+				</article>
+			</section>
+			<section class="mediaWall">
+				<div class="media-wrapper">
+					<article class="media media--small news">
+					<a href="#header">
+						<div class="content-wrapper">
+							<span class="media__date"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg>23 mai 2014</span>
+							<h2 class="media__title">News headline</h2>
+							<p>Lorem ipsum dolor sit amet, sed do eiusmod
+							tempor incididunt ut aliqua</p>
+						</div>
+					</a>	
+					</article>
+					<article class="media media--small media--right news">
+						<a href="#header">
+						<div class="content-wrapper">
+							<span class="media__date"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg>23 mai 2014</span>
+							<h2 class="media__title">News headline</h2>
+							<p>Excepteur sint occaecat cupidatat non
+							proident, sunt in id est laborum.</p>
+						</div>
+						</a>
+					</article>
+				</div>
+				<article class="media media--mid calendar">
+					<a href="#header">
+					<div class="content-wrapper">
+						<span class="media__date">17 mai</span>
+						<h2 class="media__title">Headline beitrag 2014</h2>
+						<h3 class="media__subtitle">Subtitle</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					</a>
+				</article>
+				<div class="media--wide">
+					<div class="imgWrapper--mid">
+						<img src="images/yahting1.png" alt="yahting">
+					</div>
+					<article class="media media--mid calendar">
+						<a href="#header">
+						<div class="content-wrapper">
+							<span class="media__date">17 mai</span>
+							<h2 class="media__title">Headline beitrag 2014</h2>
+							<h3 class="media__subtitle">Subtitle</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						</a>
+					</article>
+					<div class="imgWrapper--small">
+						<img src="images/croat-flag.png" alt="croatFlag">
+					</div>
+					<div class="imgWrapper--small">
+						<img src="images/yachting2.png" alt="yahting">
+					</div>
+				</div>
+				<article class="media media--black news">
+					<a href="#header">
+					<div class="imgWrapper">
+						<img src="images/news-tiangle.png" alt="">
+					</div>
+					<div class="content-wrapper">
+						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-news"></use></svg>
+						<h2 class="media__title">News+ <span>bilder</span></h2>
+					</div>
+					</a>
+				</article>
+				<article class="media media--black calendar">
+					<a href="#header">
+					<div class="content-wrapper">
+					<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg>
+						<h2 class="media__title">Segelteam termine 2014</h2>
+					</div>
+					</a>
+				</article>
+			</section>
+			<section class="text">
+				<article class="container">
+					<header>
+						<h2 class="text__title">Headliine - Lorem Ipsum</h2>
+						<h3>Subtitle lorem ipsum</h3>
+						<hr>
+					</header>
+					<div class="text__column">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fugit, laudantium consequuntur, consectetur cumque accusamus fugiat ducimus omnis tenetur eligendi, assumenda veniam adipisci perspiciatis dolorem iusto.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit provident id illo error consequatur ipsam blanditiis suscipit alias facilis ad recusandae necessitatibus totam voluptates et quaerat labore, voluptatibus beatae laudantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nisi modi, quisquam quaerat dignissimos impedit tempore blanditiis perferendis hic aspernatur cupiditate nihil inventore quidem harum dolor expedita nulla doloremque iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ipsam ullam in, esse numquam quasi autem earum sunt magni eligendi a perspiciatis officiis placeat, tenetur saepe, sed necessitatibus tempore similique!</p>
+					</div>
+					<div class="text__column">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fugit, laudantium consequuntur, consectetur cumque accusamus fugiat ducimus omnis tenetur eligendi, assumenda veniam adipisci perspiciatis dolorem iusto.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit provident id illo error consequatur ipsam blanditiis suscipit alias. Autem nisi modi, quisquam quaerat dignissimos impedit tempore blanditiis perferendis hic aspernatur cupiditate nihil inventore quidem harum dolor expedita nulla doloremque iste.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A qui ratione eos cum quaerat accusamus numquam, consequuntur itaque perferendis modi nemo perspiciatis ipsum iure animi quibusdam reiciendis provident, ab, accusantium!</p>
+					</div>
+				</article>
+				<img src="images/timeline.png" alt="" class="text__bottom">
+			</section>
+			<section class="team">
+				<header>
+					<h2 class="team__title">Unser Team</h2>
+					<h3 class="team__subtitle">Subtitles von unserem team</h3>
+					<hr>
+				</header>
+				<main>
+					<div class="team__box left-box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team3337.png" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Max Mustermann</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team555.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Kyle Erik</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team2.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Roseann Delphine</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team22.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Gustaf Mathéo</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team588.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Emil Théotime</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box left-box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team4.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Thomas Everett</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team7.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Haig Jaromir</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team67.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Gabrijel Dominik</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team44.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Iona Deloris</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team553.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Yorgos Crawford</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box left-box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team332.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Esther Marjolein</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team3.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Winston Martin</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team322.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Ida Gaetana</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team6.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Ning Ha-Jun</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__box">
+						<div class="imgWrapper">
+							<img src="images/crew/crew-team77.jpg" alt="crew">
+						</div>
+						<div class="team__box__data">
+							<div>
+								<h2>Marcellin Samson</h2>
+								<p>A smooth sea never made a skilled sailor.</p>
+							</div>
+						</div>
+					</div>
+				</main>	
+			</section>
+			<section class="panel">
+				<article class="contact">
+					<h2>Kontakt</h2>
+					<h3>Formular</h3>
+					<form name="sentMessage" action="POST">
+						<div>
+							<input type="text" id="name" placeholder="Name*">
+						</div>
+						<div>
+							<input type="email" id="mail" placeholder="Email*">
+						</div>
+						<textarea name="message" id="" cols="30" rows="10">
+						</textarea>
+						<button id="sendMessageButton" type="submit">Absenden</button>
+					</form>
+				</article>
+				<article class="brand">
+					<div class="brand__box">
+						<figure>Sponsor1 logo</figure>
+					</div>
+					<div class="brand__box">
+						<figure>Sponsor1 logo</figure>
+					</div>
+					<div class="brand__box">
+						<figure>Sponsor1 logo</figure>
+					</div>
+					<div class="brand__box">
+						<figure>Sponsor1 logo</figure>
+					</div>
+				</article>
+			</section>
+		</main>
+		<!-- pop-up termine-->
+			<section class="termine">
+				<ul class="popup__icons">
+					<li class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cancel"></use></svg></li>
+					<li><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg></li>
+					<li><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg></li>
+					<li><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-gplus"></use></svg></li>
+				</ul>
+				<h2 class="termine__title">Termine von segelteam Austria</h2>
+				<h4>lorem ipsum proin gravida nibh vel velit</h4>
+				<div class="termine__table">
+					<ul>
+						<li>
+							<span class="data">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg>23-24 mai 2014
+							</span>
+							<span>Lorem ipsum proin gravida</span>
+							<span>Mondsee</span>
+							<span>Alle klassen</span>
+						</li>
+						<li>
+							<span class="data">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg>23-24 mai 2014
+							</span>
+							<span>Lorem ipsum proin gravida</span>
+							<span>Mondsee</span>
+							<span>Alle klassen</span>
+						</li>
+						<li>
+							<span class="data">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg>23-24 mai 2014
+							</span>
+							<span>Lorem ipsum proin gravida</span>
+							<span>Mondsee</span>
+							<span>Alle klassen</span>
+						</li>
+						<li>
+							<span class="data">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg>23-24 mai 2014
+							</span>
+							<span>Lorem ipsum proin gravida</span>
+							<span>Mondsee</span>
+							<span>Alle klassen</span>
+						</li>
+						<li>
+							<span class="data">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg>23-24 mai 2014
+							</span>
+							<span>Lorem ipsum proin gravida</span>
+							<span>Mondsee</span>
+							<span>Alle klassen</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- pop-up newsArticle -->
+			<section class="newsArticle">
+				<div class="container">
+					<ul class="popup__icons">
+						<li class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cancel"></use></svg></li>
+						<li><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg></li>
+						<li><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg></li>
+						<li><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-gplus"></use></svg></li>
+					</ul>
+					<div class="column">
+						<header>
+							<span class="newsArticle__date">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg>
+								23. Mai 2014
+							</span>
+							<h2 class="newsArticle__title">Newsartikel headline</h2>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+							<hr>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem magni, quam nulla voluptate earum dicta illum eum eveniet nisi! Animi doloribus officia numquam tempore facilis consequatur nam, architecto at. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ratione molestiae quisquam nisi sed officia sit, doloremque fugiat, mollitia sequi, deserunt veniam? Laboriosam nihil totam voluptatum similique beatae ratione, blanditiis!</p>
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tempore temporibus dolorum nisi nostrum velit quo obcaecati! Expedita qui ipsa non reiciendis quis, veritatis consequatur magnam iure minus eaque. Provident.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam fuga, tempore repellendus dolorum distinctio nulla laboriosam inventore veritatis eaque pariatur velit eos alias saepe accusantium quisquam! Tempora impedit, debitis iure.</p>
+					</div>
+					<div class="column">
+						<div class="news__slider">
+							<ul>
+								<li>
+									<img src="images/slider/slider1.jpg" alt="">
+								</li>
+								<li>
+									<img src="images/slider/slider2.jpg" alt="">
+								</li>
+								<li>
+									<img src="images/slider/slider3.jpg" alt="">
+								</li>
+								<li>
+									<img src="images/slider/slider4.jpg" alt="">
+								</li>
+							</ul>
+							<span class="btn btn-next">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-next"></use></svg>
+							</span>
+							<span class="btn btn-prev">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-prev"></use></svg>
+							</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolorem maxime totam. Obcaecati et magni nemo possimus asperiores praesentium illum! Non voluptatum, explicabo quos possimus ad, facere reprehenderit perferendis velit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero et, facere delectus consequuntur eum officiis quae dolore mollitia repellendus a ratione distinctio numquam quia accusantium animi laboriosam vel, architecto fuga!</p>	
+					</div>
+				</div>
+				<div class="teasers">
+					<div class="container">
+						<h2 class="teasers__title">Altere artikel</h2>
+						<div class="teasers__slider">
+							<div class="teasers__slider__wrapper">
+								<article>
+									<div class="imgWrapper">
+										<img src="images/slider/slider-b.jpg" alt="">
+									</div>
+									<h3>Headline von einem  älteren Artikel</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis, fuga iusto repudiandae harum consequuntur id saepe eligendi dolores nobis tempora, molestiae ducimus unde delectus reprehenderit omnis illo ex fugiat.</p>
+								</article>
+								<article>
+									<div class="imgWrapper">
+										<img src="images/slider/slider-b6.jpg" alt="">
+									</div>
+									<h3>Headline von einem  älteren Artikel</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis, fuga iusto repudiandae harum consequuntur id saepe eligendi dolores nobis tempora, molestiae ducimus unde delectus reprehenderit omnis illo ex fugiat.</p>
+								</article>
+								<article>
+									<div class="imgWrapper">
+										<img src="images/slider/slider-b2.jpg" alt="">
+									</div>
+									<h3>Headline von einem  älteren Artikel</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis, fuga iusto repudiandae harum consequuntur id saepe eligendi dolores nobis tempora, molestiae ducimus unde delectus reprehenderit omnis illo ex fugiat.</p>
+								</article>
+								<article>
+									<div class="imgWrapper">
+										<img src="images/slider/slider-b3.jpg" alt="">
+									</div>
+									<h3>Headline von einem  älteren Artikel</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis, fuga iusto repudiandae harum consequuntur id saepe eligendi dolores nobis tempora, molestiae ducimus unde delectus reprehenderit omnis illo ex fugiat.</p>
+								</article>
+								<article>
+									<div class="imgWrapper">
+										<img src="images/slider/slider-b4.jpg" alt="">
+									</div>
+									<h3>Headline von einem  älteren Artikel</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis, fuga iusto repudiandae harum consequuntur id saepe eligendi dolores nobis tempora, molestiae ducimus unde delectus reprehenderit omnis illo ex fugiat.</p>
+								</article>
+								<article>
+									<div class="imgWrapper">
+										<img src="images/slider/slider-b5.jpg" alt="">
+									</div>
+									<h3>Headline von einem  älteren Artikel</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis, fuga iusto repudiandae harum consequuntur id saepe eligendi dolores nobis tempora, molestiae ducimus unde delectus reprehenderit omnis illo ex fugiat.</p>
+								</article>
+								<article>
+									<div class="imgWrapper">
+										<img src="images/slider/slider-b6.jpg" alt="">
+									</div>
+									<h3>Headline von einem  älteren Artikel</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis, fuga iusto repudiandae harum consequuntur id saepe eligendi dolores nobis tempora, molestiae ducimus unde delectus reprehenderit omnis illo ex fugiat.</p>
+								</article>
+								<article>
+									<div class="imgWrapper">
+										<img src="images/slider/slider-b.jpg" alt="">
+									</div>
+									<h3>Headline von einem  älteren Artikel</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis, fuga iusto repudiandae harum consequuntur id saepe eligendi dolores nobis tempora, molestiae ducimus unde delectus reprehenderit omnis illo ex fugiat.</p>
+								</article>
+							</div>
+							<span class="btn teasersBtn-next">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-next"></use></svg>
+							</span>
+							<span class="btn teasersBtn-prev">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-prev"></use></svg>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		<footer class="footer">
+			<div class="footer__copyright">
+				<span>© 2014. Segel-Team. Alle Rechte vorbehalten</span>
+			</div>
+			<div class="footer__social">
+				<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
+				<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg>
+			</div>
+			<ul class="footer__nav">
+				<li>Imppressum</li>
+				<li>Datenshutz</li>
+				<li>Rechtliches</li>
+				<li>Copyright</li>
+			</ul>
+		</footer>
+	</div>
+	<!-- script files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

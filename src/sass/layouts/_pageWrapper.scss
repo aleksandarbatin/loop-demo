@@ -1,0 +1,23 @@
+//-------------------------
+//----------- PAGE WRAPPER
+//-------------------------
+
+.pageWrapper {
+	position: relative;
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	background-color: #fff;
+	// z-index: -55;
+	overflow: hidden;
+	&.overlay:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.8);
+		z-index: 44;
+	}
+}

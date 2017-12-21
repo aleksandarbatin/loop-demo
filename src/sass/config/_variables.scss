@@ -1,0 +1,36 @@
+//-------------------------
+//----------------VARIABLES
+//-------------------------
+
+//-----COLORS
+$c-black           : #000;
+$c-white           : #fff;
+$c-red             : #C4133f;
+$c-grey            : #717171;
+$c-lightGrey       : #bbb;
+$c-background      : #e5eaee;
+$c-contactField    : #e8e8e8;
+$c-neutral        : #eee;
+
+//-----PATHS
+$localFontBase: "/fonts/";
+$imgBaseUrl   : "/images/";
+
+
+//------DIMENSIONS
+$baseFontSize: 10;
+$fullWidth: 100%;
+$fullHeight: 100%;
+
+//------FONT
+$fontDefault     : Arial, Helvetica, Tahoma, sans-serif;
+$baseFont: Arial;
+
+
+
+//------MEDIA QUERIES
+$desktop--Large  : 1700px;
+$desktop         : 1440px;
+$tablet          : 1023px;
+$mobile			 : 767px;
+
